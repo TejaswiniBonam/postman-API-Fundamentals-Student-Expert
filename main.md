@@ -39,4 +39,35 @@
 | API | Simplified interface for interacting with the backend | Waiter | 
 | Server | The backend where the processing happens | Kitchen |
 
+### Types of APIs
+------------------------------------------------------------------------------------------
+#### Hardware APIs 
+*Hardware APIs allow software applications to communicate with hardware components like cameras, microphones, sensors, or GPUs without the developer having to deal with the internal complexity of the hardware.*
+* **How They Work** : When a developer writes code to access hardware features, they don't write code that directly controls the hardware.
+ * Instead, they use APIs provided by the operating system.
+ * The operating system acts as a middle layer between the software and hardware.
+* **Example 📱** : Imagine you're building a mobile app that needs to take pictures.
+ * If the code includes the below code, the **Camera** is the API, your code calls this API.
+ * OS receives that request and communicates with the Camera Hardware driver.
+ * And the same Camera API gives you the captured image as a response
+```python
+#code calls Camera API open() method
+#OS receives request and communicate with the real Camera H/W and opens the camera as response
+Camera.open();
+
+#code calls API captureimage()
+#OS talks with real cam
+#captures image
+Camera.captureImage();
+```
+**Examples**
+
+| Hardware	| API | Example |	Platform |
+| --------------- | ------------------------ | -------------------------------- |
+| Camera |	CameraX |	Android |
+| Microphone |	MediaRecorder |	Android |
+| GPS |	LocationManager |	Android |
+| Bluetooth |	CoreBluetooth |	iOS |
+| Graphics Card (GPU)	| DirectX	| Windows |
+
 
