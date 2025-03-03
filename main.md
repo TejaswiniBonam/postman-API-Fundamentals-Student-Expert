@@ -62,7 +62,7 @@ Camera.captureImage();
 ```
 **Examples**
 
-| Hardware	| API | Example |	Platform |
+| Hardware	API | Example |	Platform |
 | --------------- | ------------------------ | -------------------------------- |
 | Camera |	CameraX |	Android |
 | Microphone |	MediaRecorder |	Android |
