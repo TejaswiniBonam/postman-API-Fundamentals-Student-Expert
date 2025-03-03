@@ -23,3 +23,9 @@
 
   
 ![3UsVrbnGRCyNZY](https://github.com/user-attachments/assets/1259c3d1-761a-48af-bb74-2a1184ef6824)
+
+### APIs - A Digital Restaurant
+
+You can think of APIs as being like a waiter at a restaurant, serving as a go-between for the customer and the kitchen. 
+
+<img width="557" alt="ALZWDyawVmyZ8W" src="https://github.com/user-attachments/assets/d103d84e-ebfe-4103-a794-f6bd1987be9d" />
