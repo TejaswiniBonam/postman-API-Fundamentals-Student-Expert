@@ -41,7 +41,7 @@
 
 ### Types of APIs
 ------------------------------------------------------------------------------------------
-#### Hardware APIs 
+### Hardware APIs 
 *Hardware APIs allow software applications to communicate with hardware components like cameras, microphones, sensors, or GPUs without the developer having to deal with the internal complexity of the hardware.*
 * **How They Work** : When a developer writes code to access hardware features, they don't write code that directly controls the hardware.
  * Instead, they use APIs provided by the operating system.
@@ -70,4 +70,59 @@ Camera.captureImage();
 | Bluetooth |	CoreBluetooth |	iOS |
 | Graphics Card (GPU)	| DirectX	| Windows |
 
+------------------------------------------------------------------------------------------------------------------
 
+### Software Library APIs 
+*A Software Library API allows developers to reuse code written by someone else without writing it from scratch.It is simply a set of functions, methods, or classes that perform specific tasks like file handling, encryption, or data manipulation.*
+* **How They Work** : Developers import the library into their project.
+ * They call the library's functions through its API.
+ * The library performs the task and returns the result.
+* **Example 📱** : Imagine you want to hash passwords in your Node.js application.
+ * Without a library:
+```javascript
+   function hashPassword(password) {
+  // Complex hashing logic
+}
+```
+ * with library bcrypt:
+```javascript
+const bcrypt = require('bcrypt');
+bcrypt.hash(password, 10);
+```
+
+**Examples**
+
+| Library |	Purpose |	Language |
+|------------------------|-----------------------|---------------------|
+| NumPy |	Data | Manipulation |	Python |
+| Lodash	Utility | Functions	| JavaScript |
+| TensorFlow |	Machine | Learning |	Python |
+| Axios |	HTTP | Requests |	JavaScript |
+| Hibernate |	Database | ORM |	Java |
+
+-------------------------------------------------------------------------------------------
+### Web APIs 🌐💻
+*Web APIs allow different applications to communicate over the internet or network.
+These APIs are hosted on a web server and provide services to other applications via HTTP or HTTPS requests.*
+* **How They Work** : Your app sends a request to the API URL.
+ * The API processes the request.
+ * It fetches the required data from the server.
+ * It sends back the response in JSON or XML format.
+* **Example 📱** : Imagine you want to hash passwords in your Node.js application.
+ * Fetching weather data from an API: Request:
+```javascript
+   fetch('https://api.openweathermap.org/data/2.5/weather?q=Delhi&appid=API_KEY')
+  .then(response => response.json())
+  .then(data => console.log(data));
+
+```
+ * Response:
+```json
+{
+  "city": "Delhi",
+  "temperature": 28,
+  "description": "clear sky"
+}
+
+```
+----------------------------------------------------------------------------------------------------------------
