@@ -18,6 +18,8 @@
   * Set the visibility to as you want. Then click "Create Workspace."
   * <img width="1265" alt="instructor_7k52zal2mzkzozhgzyoosmk2v_public_1734085130_Screenshot+2024-12-13+at+3 48 08 PM 1734085130035" src="https://github.com/user-attachments/assets/9bc81f88-94cc-4851-8f3e-87ef6a12a590" />
 
+### Create a Collection
+### wait- what is a collection??
 
 
 # Well well THATS HOW YOU CREATE A WORKSPACE 
