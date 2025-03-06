@@ -20,7 +20,10 @@
 
 ### Create a Collection
 ### wait- what is a collection??
-
+* Collections are places to organize your API requests in Postman.
+* They serve as executable documentation of API endpoints.
+* A Collection in Postman is a group of HTTP requests that can be organized, saved, and executed together.
+* It helps developers group related API endpoints for better organization and testing.
 
 # Well well THATS HOW YOU CREATE A WORKSPACE 
 
