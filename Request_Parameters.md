@@ -38,5 +38,16 @@
 * Based on the documentation of API
 
 
+# TASK - Search books by genre
+* In the previous API request, We wrote the call to retrieve ALL books
+* Now, Let us try to filter by genre
+* The API allows us to add query parameters to a GET /books request to filter the results, as shown under "Params." Check out the Postman Library API v2 documentation for detailed documentation.
+* So acc to Postman library API , There are some params listed like, genre, checkout, Search
+* SO we can filter out by genre
+* And the URL goes like
+      * https://library-api.postmanlabs.com/books?genre=fiction
+      * https://library-api.postmanlabs.com/books?genre=fiction&checkedOut=true etc
+* These will give the books that falls under those conditions
+
 
 
