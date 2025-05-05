@@ -50,11 +50,11 @@
 <img width="868" alt="instructor_26fp2261340y1ukokimvca8su_public_1649283511_get+books+response 1649283511929" src="https://github.com/user-attachments/assets/cf47afdd-7284-4400-a429-3f0feadc9aec" />
 
 ## Popular Request Methods
-**Method name**	**Operation**
-GET	Retrieve data (Read)
-POST	Send data (Create)
-PUT/PATCH	Update data (Update)
-
-* PUT usually replaces an entire resource, whereas PATCH usually is for partial updates
-DELETE	Delete data (Delete)
+| **Method name**	| **Operation** |
+|-----------------|------------------|
+| GET	| Retrieve data (Read) |
+| POST |	Send data (Create) |
+| PUT/PATCH |	Update data (Update) |
+|      |    * PUT usually replaces an entire resource, whereas PATCH usually is for partial updates |
+| DELETE |	Delete data (Delete) |
 
