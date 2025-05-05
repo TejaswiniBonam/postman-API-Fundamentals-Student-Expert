@@ -18,3 +18,25 @@
 ![instructor_26fp2261340y1ukokimvca8su_public_1649630820_baseUrl+1 1649630820044](https://github.com/user-attachments/assets/d2abce83-e22a-4e1e-8676-4c07421d0f39)
 
 
+## Query Parameters
+* Minimum things required to make an API call
+    * Request Type (GET, POST, PUT, PATCH, DELETE...)
+    * URL
+* Sometimes api calls ALLOW some parameters that Key, Value pairs
+* Key-Value pairs are represented within the URL.. They start with '?' and seperated with '='
+* "URL?<key>=<value>
+* There might be a case where there are more than one key-value pair
+* And they are seperated by '&'
+* URL?<key1>=<value1>&<key2>=<value2>
+### Example
+* If we search "Hello" in google it goes like
+* https://google.com/search?q=Hello..........
+* Here '/search' is the **PATH**
+* Where <q, Hello> --> Key -value pairs where q stands for query
+
+## When to use parameters?
+* Based on the documentation of API
+
+
+
+
