@@ -58,3 +58,32 @@
 |      |    * PUT usually replaces an entire resource, whereas PATCH usually is for partial updates |
 | DELETE |	Delete data (Delete) |
 
+
+* Since we are "getting" books and not modifying any data, it makes sense that we are making a GET request. 
+* These are just conventions - it all depends on how the API is coded. To know which method to use, always read the documentation for the API you're working with!
+
+
+## Les know more about Request URL
+* In addition to a request method, a request must include a **request URL** that indicates **where to make the API call**. A request URL has three parts: a **protocol (such as http:// or https://), host (location of the server), and path (route on the server)**. In REST APIs, the path often points to a reference entity, like "books".
+
+| **Protocol** | 	**Host** | 	**Path** |
+|------------|----------|---------------|
+| https:// | 	library-api.postmanlabs.com	| /books |
+
+
+## Response Status Code
+| **Code Range** | 	**Meaning** |	**Example** |
+|---------------|----------------|------------------|
+| 2xx |	Success |	200 - OK |
+| | 201 - Created |
+| | 204 - No content (silent OK) |
+| 3xx |	Redirection |	301 - Moved (path changed) |
+| 4xx |	Client error |	400 - Bad request |
+| | 401 - Unauthorized |
+| | 403 - Not Permitted |
+| | 404 - Not Found |
+| 5xx |	Server error |	500 - Internal server error |
+| | 502 - Bad gateway |
+| | 504 - Gateway timeout |
+
+### ou can hover over any response code to see what it means
