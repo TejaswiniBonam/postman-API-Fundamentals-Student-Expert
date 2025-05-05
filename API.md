@@ -127,17 +127,17 @@ These APIs are hosted on a web server and provide services to other applications
 ```
 ----------------------------------------------------------------------------------------------------------------
 * Multiple API types may be used to achieve a task. For example, uploading a photo to Instagram makes use of various APIs:
- * Hardware API for the app to talk to your camera
- * Software library API for the image to be processed with filters
- * Web API for sending your image to Instagram's servers so your friends can like it!
+  * Hardware API for the app to talk to your camera
+  * Software library API for the image to be processed with filters
+  * Web API for sending your image to Instagram's servers so your friends can like it!
 * There is more than one way to build and consume APIs. Some architecture types you may come across are:
- * REST (Representational State Transfer)
- * GraphQL
- * WebSockets
- * webhooks
- * SOAP (Simple Object Access Protocol)
- * gRPC (Google Remote Procedure Call)
- * MQTT (MQ Telemetry Transport)
+  * REST (Representational State Transfer)
+  * GraphQL
+  * WebSockets
+  * webhooks
+  * SOAP (Simple Object Access Protocol)
+  * gRPC (Google Remote Procedure Call)
+  * MQTT (MQ Telemetry Transport)
 ### REST APIs
 Some traits of REST APIs include not storing session state between requests, the ability to cache, and the ability to send and receive various data types.
 
