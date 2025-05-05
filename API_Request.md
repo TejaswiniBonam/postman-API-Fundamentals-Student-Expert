@@ -75,15 +75,31 @@
 | **Code Range** | 	**Meaning** |	**Example** |
 |---------------|----------------|------------------|
 | 2xx |	Success |	200 - OK |
-| | 201 - Created |
-| | 204 - No content (silent OK) |
+| | | 201 - Created |
+| | | 204 - No content (silent OK) |
 | 3xx |	Redirection |	301 - Moved (path changed) |
 | 4xx |	Client error |	400 - Bad request |
-| | 401 - Unauthorized |
-| | 403 - Not Permitted |
-| | 404 - Not Found |
+| | | 401 - Unauthorized |
+| | | 403 - Not Permitted |
+| | | 404 - Not Found |
 | 5xx |	Server error |	500 - Internal server error |
-| | 502 - Bad gateway |
-| | 504 - Gateway timeout |
+| | | 502 - Bad gateway |
+| | | 504 - Gateway timeout |
 
-### ou can hover over any response code to see what it means
+**You can hover over any response code to see what it means**
+
+## Request - Response Pattern
+
+* An API is the interface that lets us know what kind of response to expect when we make certain calls to a server.
+* 
+
+
+
+<img width="512" alt="instructor_26fp2261340y1ukokimvca8su_public_1649285301_request+response+pattern 1649285301835" src="https://github.com/user-attachments/assets/75523346-640f-4027-8896-721977c7b040" />
+
+* The client is the agent making a request. A client could be a browser or an application you have coded, for example. In our case Postman is the client because that's how we sent the request. 
+* The request is sent over a network to some server. In our case, we made a request over the public internet to a server located at the address https://library-api.postmanlabs.com.
+* The server interpreted the request (GET /books) and sent the appropriate response over the network back to the Postman client: a list of books.
+
+# WELL DONE
+
