@@ -35,4 +35,26 @@
 * I named it "library api vw"
 * Here I put the related apis.
  
+## GET BOOKS from library API
+### Ok!! Now we r gonna make our first request
+**Task** = To fetch all books
+* Click on Add a request
+* You'll see types of requests on the left as a dropdown.. make sure to select **GET**
+* And Paste the URL https://library-api.postmanlabs.com/books
+* Save it and send it
+* You will see the JSON( JavaScript Object Notation) format response below that has all books details
+<img width="380" alt="instructor_26fp2261340y1ukokimvca8su_public_1649281938_add+request 1649281938816" src="https://github.com/user-attachments/assets/18990211-a46c-40c8-b874-0c6b2130e675" />
+
+<img width="676" alt="instructor_26fp2261340y1ukokimvca8su_public_1649282885_get+books 1649282885313" src="https://github.com/user-attachments/assets/ad0f7283-ba3f-4c79-9b89-8def787fac9c" />
+
+<img width="868" alt="instructor_26fp2261340y1ukokimvca8su_public_1649283511_get+books+response 1649283511929" src="https://github.com/user-attachments/assets/cf47afdd-7284-4400-a429-3f0feadc9aec" />
+
+## Popular Request Methods
+**Method name**	**Operation**
+GET	Retrieve data (Read)
+POST	Send data (Create)
+PUT/PATCH	Update data (Update)
+
+* PUT usually replaces an entire resource, whereas PATCH usually is for partial updates
+DELETE	Delete data (Delete)
 
