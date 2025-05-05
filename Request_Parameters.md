@@ -204,3 +204,38 @@
   "subscribers_count": 1
 }
 ```
+
+
+# Path VS Query Params
+| Path Variable	| Query parameters |
+|-----------------------|----------------------|
+| ex: /books/abc123	| ex: /books?search=borges&checkedOut=false |
+| Located directly after a slash in the path.It can be anywhere on the path | Located only at the end of a path, right after a question mark ? |
+| Accepts dynamic values |	Accepts defined query keys with potentially dynamic values. |
+| * Often used for IDs or entity names |	* Often used for options and filters |
+
+
+# WHen to use variable?
+* see documentatiom
+* Note that some API documentation uses colon syntax to represent a wildcard in the path like /users/:username, while some use curly braces like /users/{username}. They both mean the same thing: that part of the path is dynamic!
+
+# Task - get a book by id
+* When you fetched all the books in the library, you may have noticed that each book has a unique id value. This id can always be used to identify the book, even if its other properties are changed.
+* According to the API documentation, we can get a specific book by hitting the path GET /books/:id, where we replace :id with the book's id. (PAth variable)
+* if u wanna do it using Query params use ?Search=Ficciones
+* GET /books?search=ficciones
+* {{baseUrl}}/books/:id And defines the path variable value down there
+* {{baseURL}}/books/29cd820f-82f9-4b45-a7f4-0924111b5b89
+![3uZbaXTZ6TAhMv](https://github.com/user-attachments/assets/9e6a323e-11f0-4480-9db2-f4d774b0ef77)
+
+
+# Debugging requests in the Postman Console
+* You used Postman's path variable helper in the Params tab of the request to add a path variable nicknamed :id to the request URL in a human-friendly way. Postman replaces :id with the value you specify for id in the Path Variables editor.
+* You can always view the raw request sent to the API by opening the Postman Console in the lower left of Postman. All requests you make and their responses are logged in the Postman Console. Scroll to the bottom to expand the most recent request.
+* You can see that Postman has inserted the book id as a path parameter in place of the :id placeholder when making the request. Cool!
+
+* If you run into any errors when making API calls, always check the Postman Console and ensure the raw request was sent as expected. A common error is adding accidental white space in your query or path parameter values.
+
+  
+
+
