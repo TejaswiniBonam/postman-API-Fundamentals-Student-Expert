@@ -41,8 +41,88 @@
 * Since we are updating some data into postman database, we need to authenticated before doing thattt
 
 
-
 ![BdRh1xGJbRu2ut](https://github.com/user-attachments/assets/0af2a83f-6833-4302-a130-d28c31c552c4)
+
+# Add an AUthorization Header
+* Some APIs require Authorization (aka Auth) for certain endpoints in order to permit a request.
+
+## Authorization
+* Think about why you might not want an API to have completely open endpoints that anyone can access publicly. It would allow unauthorized people to access data they shouldn't see, or allow bots to flood an API with thousands of calls per second and shut it down.
+* There are multiple methods for authorizing a request. Some examples are
+    * Basic Auth (username and password),
+    * OAuth (delegated authorization), 
+    * API Keys (secret strings registered to a developer from an API portal). 
+## Getting an API Key
+* APIs that use API Key auth usually allow developers to sign up in a developer portal, where they will receive a random API Key that can be used to authorize their requests to the API. The API Key allows the API to track who is making calls and how often.
+* The Postman Library API v2 uses very light protection and does not require you to register for an API Key. You simply have to know it:
+    * Header name: api-key
+    * Header value: postmanrulz
+* As the documentation shows, the Postman Library API v2 requires adding this header to any requests for **adding, updating and deleting books**, since these operations change data in the database instead of simply reading them.
+
+# Headers
+
+* Headers are how we can add metadata about our requests, such as authorization information or specify the data type we want to receive in a response.
+* This is different than the actual payload data we send in the body of a request, such as our new book information.
+* You can think of headers like the outside of an envelope when you send a letter.
+* The envelope has information about delivering the letter, like proof that you've paid for postage. The actual data "payload" is the letter inside the envelope.
+
+## process
+* Now, in the add a book request, Go to Headers Tab
+* Fill the key value values as api-key, postmanrulz
+* Now save and send the request
+* IT SHOW 201 Created status which means, We are SUCCEEDED
+```json
+{
+    "id": "b28adc4a-7dbb-4b9d-9870-db91d4b8db82",
+    "title": "BRL Book",
+    "author": "BRL",
+    "genre": "delulu",
+    "yearPublished": 2004,
+    "checkedOut": false,
+    "isPermanentCollection": false,
+    "createdAt": "2025-05-06T05:29:27.721Z"
+}
+```
+
+# NOW YOU can test if book is added or Not..
+* {{baseURL}}/books?genre=delulu
+* {{baseURL}}/books?search=BRL
+```json
+[
+    {
+        "id": "b28adc4a-7dbb-4b9d-9870-db91d4b8db82",
+        "title": "BRL Book",
+        "author": "BRL",
+        "genre": "delulu",
+        "yearPublished": 2004,
+        "checkedOut": false,
+        "isPermanentCollection": false,
+        "createdAt": "2025-05-06T05:29:27.721Z"
+    }
+]
+```
+
+# ANother Way for Auth
+# Use postman AUTH!
+* Postman has an Auth helper that makes authorizing requests even easier!
+* https://learning.postman.com/docs/sending-requests/authorization/authorization/
+* Delete the api-key HEader you created Earlier
+* Hover over the api-key header in the Headers tab and click the "x" icon at the right to delete the header. Save your request.
+
+## Add AUth to collection
+* The Postman Auth helper can help you add authorization at the request, folder or collection level. Let's add the api-key to our entire collection so that all requests will send the key.
+* Instead of adding auth details to every request, we are adding it to entire collection
+    * click on collection namr
+    * Click authorization
+    * Set authorization type to API Key
+    * Enter api key and value <api-key, postmanrulz>
+    * And put the type to HEADER
+    * and SAVE
+* Now Go back to the POST request and send it now (We deleted the header)
+* AND it goes without ERROR
+
+
+
 
 
 
