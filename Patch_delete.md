@@ -12,3 +12,12 @@ A PATCH request in HTTP is used to partially update an existing resource on a se
 ```
 * save and send
 * Now ur book is updated as CHeckedOut
+
+# TASK Delete ur book
+* delete the book
+* DELETE https://library-api.postmanlabs.com/books/:id
+* update id to {{new_book_id}} in the path variables
+* save and send
+* It should show 204 no content status
+* To check it it is really deleted or Not, Try sending the request again
+* IT WILL SAY 404 NOT FOUND
