@@ -73,9 +73,65 @@ and there are a lot more in https://learning.postman.com/docs/tests-and-scripts/
 * In addition to getting variables, you can also set them
     * pm.collectionVariables.set("variableName", "variableValue")
     *  pm.collectionVariables.set(“myVar”, “foo”)
-      
-          
 
+
+# TASK : First script
+
+## Logging Data
+```js
+console.log("Hello world!")
+```
+## comments
+```js
+//HI
+/*H
+e
+l
+l
+o */
+```
+
+## so we are writing POST-response Script
+* So post-response script is nothing but the group of instructions that needs to be executed right after the response of  arequest.
+* Soo Let's take the add a book request
+* Go to Scripts tab and select post response tab
+* Now Lets try to print the response in json format in the console after the completion of response
+```js
+console.log(pm.response.json())
+```
+* Now save and send the request
+* After that, Go to console abd you will see the json() data being there
+* so post-res script can be anything not just printing
+
+# TASK - Grab the new book id
+* automatically set a value for a variable via scripting.
+* Saving a value as a variable allows you to use it in other requests.
+* Using a Post-response script, let's grab the id of a newly added book and save it so we can use it in future requests.
+
+# Setting and Getting Collection variables
+* The pm object allows you to set and get collection variables.
+* To set a collection variable, use the .set() method with two parameters: the variable name and the variable value
+      * pm.collectionVariables.set("variableName", value)
+* To get a collection variable use the .get() method and specify the name of the variable you want to retrieve:
+      * pm.collectionVariables.get("variableName")
+## Local variables
+* We can also store local variables inside our scripts using JavaScript.
+* There are two ways to define a variable in JavaScript: using the const or let keywords.
+      * **const** is for variables that won't change value,
+      * **let** allows you to reassign the value later.
+
+* For now, We need to grab the new id of the book we added
+## process
+* Go to the add a book request
+* Go to scripts and then select post response tab
+* there write the code
+```js
+const new_book_id = pm.response.json().id 
+pm.collectionVariables.set("new_book_id", new_book_id)
+```
+* then save and send
+* Now check the collection's variables tab and you'll see the **new_book_id** there
+* From Now on, You can use {{new_book_id}} in place of it.
 
 
 
